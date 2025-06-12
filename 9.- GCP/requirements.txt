@@ -1,0 +1,17 @@
+numpy
+pandas
+scipy
+scikit-learn
+pillow
+matplotlib
+seaborn
+jupyter
+notebook
+line_profiler
+memory_profiler
+numexpr
+pandas-datareader
+netcdf4
+yfinance
+pandas
+google-cloud-bigquery
