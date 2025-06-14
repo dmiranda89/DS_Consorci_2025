@@ -13,5 +13,5 @@ numexpr
 pandas-datareader
 netcdf4
 yfinance
-pandas
+pandas_gbq
 google-cloud-bigquery
