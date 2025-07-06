@@ -1,0 +1,42 @@
+Resumen del Proceso en GCP
+Acceder a tu Proyecto en la Consola de GCP.
+Crear una Instancia de VM (Máquina Virtual) en Compute Engine.
+ - create instance, Enable
+Conectarse a la Instancia (SSH).
+ - En consola gcloud compute ssh tu-nombre-instancia, Password
+		 The key fingerprint is:
+		SHA256:3J3Kzi4XCPQK3lqTu4Fzvm17XLVtVvT1A5U4tOa867k beltran_vazquez@cs-1013940245741-default
+		The key's randomart image is:
+		+---[RSA 3072]----+
+		|            ..o..|
+		|      .      +..o|
+		|     . .     oo.+|
+		|    . .... .+...+|
+		|   . o +S.. o+ oo|
+		|    ..* ..... o +|
+		|    oooo .oo . o |
+		|    .+.ooo+   o  |
+		|      ++o*+ .E.  |
+		+----[SHA256]-----+
+		
+ - gcloud compute ssh instance-20250609-105546, No time zone especified
+ - CONECTADO A MI instancia: beltran_vazquez@instance-20250609-105546
+Preparar el Entorno Python.
+
+ - Actualizar e instalar Python
+  - sudo apt update
+	sudo apt upgrade -y : What do you want to do about modified configuration file sshd_config? OK
+	sudo apt install -y python3 python3-pip python3-venv
+ - Crear entorno y activar
+  - python3 -m venv env_consorci
+  - source env_consorci/bin/activate
+  
+ - Instalar librerias python con requirements.txt
+  - Guardar el fichero requirements.txt en el bucket de GCS
+  - Descargar a tu instancia: gsutil cp gs://bucket-consorci/requirements.txt .
+  - Instalar dependencias en tu entorno: pip install -r requirements.txt 
+  
+Crear Bucket GCS
+Crear instancia Vertex AI workbench
+
+
